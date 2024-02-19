@@ -1,0 +1,64 @@
+body {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#title {
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*code by Auni*/
+
+#paragraph {
+    text-align: justify;
+    font-size: clamp(16px, 20px, 24px);
+}
+
+button {
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: clamp(13px, 16px, 24px);
+    word-wrap: break-word;
+}
+
+/*code by Auni*/
+
+.buttons {
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+#parColor {
+    margin-bottom: 8px;
+}
+
+#choose {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 510px) {
+    body {
+        margin-bottom: 100px;
+    }
+
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .box .button {
+        width: fit-content;
+    }
+
+    #choose {
+        margin-top: 0;
+    }
+}
